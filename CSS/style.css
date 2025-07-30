@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+   background: linear-gradient(to right, #59bacf, #AAE1EE);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #59bacf, #AAE1EE);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #9ED4FA, #031D44) 1;
+    border-top: 2px solid;
+    padding: 10px 30px;
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+    margin-right: 30px;
+    display: block;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #011638;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30%;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #011638;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #FFF9FB;
+    background: rgba(1, 22, 56, 0.1);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+.account-section {
+    margin-left: 30px;
+    position: static;
+}
+
+.account-section a, .account-section span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background: #D7F1F7;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+    width: 56px;
+    height: 56px;
+}
+
+.account-section a:hover {
+    background: #ffffff;
+    color: #59bacf;
+}
+
+.account-section svg {
+    display: block;
+    width: 36px;
+    height: 36px;
+    fill: #59bacf;
+}
+
+
+.desconto-tag {
+ width: 80px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 1em; 
+  font-weight: bold;
+  padding: 10px 14px; 
+  border-radius: 8px; 
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: rotate(-10deg);
+}
