@@ -1,0 +1,72 @@
+.containerProduto {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.botoes {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.botoes button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2A8CA2;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.botoes button:hover {
+    background-color: #1F6B7A;
+    transform: scale(1.05);
+}
+.produtos {
+    display: grid; /* Usando grid para melhor alinhamento */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px;
+}
+.produto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.produto img {
+    height: 200px;
+    object-fit: cover;
+}
+.produto:hover {
+    transform: scale(1.03);
+}
+.preco {
+    font-weight: bold;
+    color: #1F6B7A;
+    margin-top: 10px;
+    display: block;
+}
+.botao-adicionar {
+    background-color: #2A8CA2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+.botao-adicionar:hover {
+    background-color: #1F6B7A;
+}
+.botao-adicionar svg {
+    flex-shrink: 0;
+}
