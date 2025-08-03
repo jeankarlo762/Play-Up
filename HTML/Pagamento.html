@@ -1,22 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
-    <link rel="shortcut icon" href="../imgs/logoAtualizada.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <title>Pagamento</title>
+  <link rel="shortcut icon" href="../imgs/logoAtualizada.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../CSS/PagamentoCSS/Pagamento.css"> 
+  
 </head>
 <body>
-     <div class="container">
-        <h1>Pagamento</h1>
-        <label for="produto">Produto:</label>
+  <div class="container">
+    <h1>Pagamento</h1>
 
-        <select id="forma de pagamento">
-            <option value="CB">Cartão de Débito</option>
-            <option value="CC">Cartão de Crédito</option>
-            <option value="Pix">PIX</option>
-            <option value="Boleto">Boleto</option>
-        </select>
-     </div>
+    <div id="lista-produtos"></div> 
+
+    <label for="formaPag">Forma de Pagamento:</label>
+    <select id="formaPag" name="formaPag" required>
+      <option value="">Selecione...</option>
+      <option value="CB">Cartão de Débito</option>
+      <option value="CC">Cartão de Crédito</option>
+      <option value="Pix">PIX</option>
+      <option value="Boleto">Boleto</option>
+    </select>
+
+    <button id="confirmar-pagamento">Confirmar Pagamento</button>
+  </div>
+  <script src = "../JS/adicionar.js"></script>
 </body>
 </html>
