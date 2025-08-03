@@ -1,0 +1,123 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-width: 90vw;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 1000;
+  pointer-events: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow-y: auto;
+}
+
+.cart-sidebar.visible {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-cart-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-cart-btn:hover {
+  transform: scale(1.2);
+  color: #2aa1be;
+}
+
+.cart-sidebar h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#cartItems li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.cart-summary {
+  margin-top: 24px;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  color: #222;
+}
+
+#cartTotal {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2aa1be;
+}
+
+.cart-summary button {
+  padding: 12px 20px;
+  background-color: #2aa1be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #1e8ca5;
+  transform: scale(1.05);
+}
+
+.remove-item-btn {
+  background-color: #ff4d4d; 
+  color: #fff; 
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease;
+}
+.remove-item-btn:hover {
+  background-color: #cc0000; 
+}

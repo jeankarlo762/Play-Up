@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Play Up</title>
+  <link rel="shortcut icon" href="../imgs/logoAtualizada.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="../CSS/IndexCSS/carousel.css">
+  <link rel="stylesheet" href="../CSS/IndexCSS/conteinerIdade.css">
+  <link rel="stylesheet" href="../CSS/IndexCSS/containerMarcas.css">
+  <link rel="stylesheet" href="../CSS/IndexCSS/containerProduto.css">
+  <link rel="stylesheet" href="../CSS/IndexCSS/style.css">
+  <link rel="stylesheet" href="../CSS/IndexCSS/Cart.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="../JS/index.js" defer></script>
+  <script src="../JS/carrinho.js"></script>
+  
+
+  
+
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container-cabecalho">
+        <img id="logo" src="../imgs/logoAtualizada.png" alt="logo Play Up" />
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Presente por idade</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Mais vendidos</a></li>
+          <li><a href="Suporte.html">Suporte</a></li>
+        </ul>
+      </nav>
+      <div class="carrinho-section">
+  <a href="#" class="carrinho-btn" aria-label="Ir para o carrinho" onclick="toggleCart()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="9" cy="21" r="1" fill="currentColor"/>
+      <circle cx="20" cy="21" r="1" fill="currentColor"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.26H6" />
+    </svg>
+  </a>
+</div>
+      <div class="account-section">
+        <a href="Login.html" aria-label="Login" class="login-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M12 14c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": true }'>
+        <div class="gallery-cell">
+            <span class="desconto-tag">-20%</span>
+            <a href="#"></a>
+            <img src="../imgs/barbie.jpg" alt="Barbie">
+            <h3>Boneca Barbie</h3>
+            <p>Explore aventuras com a clássica Barbie!</p>
+        </div>
+        <div class="gallery-cell">
+            <span class="desconto-tag">-15%</span>
+            <img src="../imgs/SPIDER-MAN.jpg" alt="Spider Man">
+            <h3>Funko - Spider Man</h3>
+            <p>Boneco Spider Man Colecionalvél Versão Exclsiva!</p>
+        </div>
+        <div class="gallery-cell">
+            <span class="desconto-tag">-80%</span>
+            <img src="../imgs/LegoAudi.jpg" alt="Lego Audi">
+            <h3>LEGO Volvo</h3>
+            <p>Monte e corra com este incrível carro LEGO!</p>
+        </div>
+        <div class="gallery-cell">
+            <span class="desconto-tag">-20%</span>
+            <img src="../imgs/LegoF1.jpg" alt="Lego F1">
+            <h3>LEGO Fórmula 1</h3>
+            <p>Velocidade e montagem em um só brinquedo!</p>
+        </div>
+        <div class="gallery-cell">
+            <span class="desconto-tag">-50%</span>
+            <img src="../imgs/nerf.jpg" alt="Nerf">
+            <h3>Lançador Nerf</h3>
+            <p>Para batalhas épicas e seguras com amigos!</p>
+        </div>
+         <div class="gallery-cell">
+            <span class="desconto-tag">-30%</span>
+            <img src="../imgs/stitch.jpg" alt="Stitch">
+            <h3>Stitch</h3>
+            <p>Um fofo Stitch de pelúcia para abraçar!</p>
+        </div>
+         <div class="gallery-cell">
+            <span class="desconto-tag">-40%</span>
+            <img src="../imgs/ps5.jpg" alt="PlayStation 5">
+            <h3>PlayStation 5</h3>
+            <p>Console de ultima geração para se divertir com amigos!</p>
+        </div>
+    </div>
+
+    <div class="container-idades">
+        <h2>Brinquedos por Idade</h2>
+        <div class="grupos-idades">
+            <div class="age-group">
+                <h3>0-3 anos</h3>
+                <p>Brinquedos seguros e educativos para os mais pequenos.</p>
+            </div>
+            <div class="age-group">
+                <h3>4-6 anos</h3>
+                <p>Brinquedos que estimulam a criatividade e a imaginação.</p>
+            </div>
+            <div class="age-group">
+                <h3>7-10 anos</h3>
+                <p>Brinquedos desafiadores para crianças em crescimento.</p>
+            </div>
+            <div class="age-group">
+                <h3>11+ anos</h3>
+                <p>Brinquedos e jogos para adolescentes e jovens adultos.</p>
+            </div>
+        </div>
+    </div>
+        <div class="containermarcas">
+            <h2>❤ Marcas favoritas</h2>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Barbie</h3>
+                    <img src="../imgs/Marcas/logoBarbie.png" alt="logo barbie">
+                    <p>Bonequinha da barbie</p>
+                </div>
+            </a>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Lego</h3>
+                    <img src="../imgs/Marcas/logoLego.png" alt="logo lego">
+                    <p>Vários Legos para se divertir!</p>
+                </div>
+            </a>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Nerf</h3>
+                    <img src="../imgs/Marcas/logoNerf.png" alt="logo nerf">
+                    <p>Brinquedos Nerf para batalhas épicas!</p>    
+                </div>
+            </a>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Funko Pop</h3>
+                    <img src="../imgs/Marcas/logoPop.jpg" alt="logo funko">
+                    <p>Bonecos Funko colecionáveis!</p>
+                </div>
+            </a>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Hot Wheels</h3>
+                    <img src="../imgs/Marcas/LogoHotWeels.png" alt="logo hot wheels">
+                    <p>Carros Hot Wheels para corridas emocionantes!</p>
+                </div>
+            </a>
+            <a href="" class="marcaslink">
+                <div class="marcas">
+                    <h3>Playmobil</h3>
+                    <img src="../imgs/Marcas/LogoPlaymobil.png" alt="logo playmobil">
+                    <p>Figuras e cenários Playmobil para aventuras!</p>
+                </div>
+            </a>
+        </div>
+       <div class="containerProduto">
+    <div class="botoes">
+        <button onclick="filtrarProdutos('novidades')">Novidades</button>
+        <button onclick="filtrarProdutos('maisVendidos')">Mais Vendidos</button>
+        <button onclick="filtrarProdutos('promocoes')">Promoções</button>
+    </div>
+
+ <div class="produtos">
+
+  <div class="produto novidades">
+    <img src="../imgs/Novidades/creeperPelucia.jpg" alt="Creeper de Pelúcia">
+    <h3>Creeper de Pelúcia - Minecraft</h3>
+    <p>O personagem mais explosivo agora em versão fofa e macia pra abraçar!</p>
+    <span class="preco">R$ 89,90</span>
+      <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0  1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto novidades">
+    <img src="../imgs/Novidades/carroMcqueen.jpg" alt="Carro McQueen">
+    <h3>Carro McQueen de Corrida</h3>
+    <p>Direto de Radiator Springs, esse McQueen é perfeito para corridas cheias de emoção!</p>
+    <span class="preco">R$ 119,90</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto novidades">
+    <img src="../imgs/Novidades/galinhaPelucia.jpg" alt="Galinha de Pelúcia">
+    <h3>Galinha de Pelúcia</h3>
+    <p>Fofo, macio e cheio de nostalgia. Ideal para crianças pequenas e fãs do clássico!</p>
+    <span class="preco">R$ 94,90</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto novidades">
+    <img src="../imgs/Novidades/minionPelucia.jpg" alt="Minion de Pelúcia">
+    <h3>Minion de Pelúcia - Stuart</h3>
+    <p>Leve um dos ajudantes mais engraçados dos filmes para casa em forma de pelúcia.</p>
+    <span class="preco">R$ 99,90</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto novidades">
+    <img src="../imgs/Novidades/pulaPirada.jpg" alt="Pula Pirata">
+    <h3>Pula Pirata</h3>
+    <p>Um clássico dos jogos de suspense e diversão com os amigos e família!</p>
+    <span class="preco">R$ 70,00</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto maisVendidos">
+    <img src="../imgs/Novidades/PlayDoh.jpg" alt="Play-Doh Kit Cores Sortidas">
+    <h3>Play-Doh Kit Cores Sortidas</h3>
+    <p>Massinhas coloridas, perfeitas pra estimular a criatividade e a imaginação!</p>
+    <span class="preco">R$ 149,90</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+
+  <div class="produto promocoes">
+    <img src="../imgs/Novidades/memoria.jpg" alt="Jogo da Memória - Disney">
+    <h3>Jogo da Memória - Disney</h3>
+    <p>Desenvolva raciocínio e memória com personagens clássicos da Disney!</p>
+    <span class="preco">R$ 79,90</span>
+     <button class="botao-adicionar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L4.89 4H14a1 1 0 0 1 .96 1.27l-1.5 6A1 1 0 0 1 12.5 12H5a1 1 0 0 1-.96-.74L2.01 2H1a1 1 0 0 1-1-1zm5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    adicionar
+  </button>
+  </div>
+</div>
+<div id="cartSidebar" class="cart-sidebar">
+  <button class="close-cart-btn" onclick="fecharCarrinho()">×</button>
+  <h2>Carrinho</h2>
+  <ul id="cartItems"></ul>
+  <div class="cart-summary">
+    <p>Total: <span id="cartTotal">R$ 0,00</span></p>
+    <button onclick="checkout()">Finalizar compra</button>
+  </div>  
+</div>
+<script src="../JS/adicionar.js"></script>
+</body>
+</html>
