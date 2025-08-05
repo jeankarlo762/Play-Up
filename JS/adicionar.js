@@ -121,3 +121,36 @@ const listaProdutos = document.getElementById('lista-produtos');
     totalDiv.textContent = `Total a pagar: R$ ${total.toFixed(2).replace('.', ',')}`;
     listaProdutos.appendChild(totalDiv);
   }
+
+  document.getElementById("confirmar-pagamento").addEventListener("click", () => {
+  const forma = document.getElementById("formaPag").value;
+  const card = document.getElementById("card-confirmacao");
+  const resumo = document.getElementById("resumo-itens");
+  const formaTexto = document.getElementById("forma-escolhida");
+  const pixArea = document.getElementById("pix-area");
+
+const carrinhoResumo = JSON.parse(sessionStorage.getItem('produtosPagamento')) || [];
+let resumoHTML = "";
+
+carrinhoResumo.forEach(item => {
+  const valorTotal = (item.preco * item.quantidade).toFixed(2).replace('.', ',');
+  resumoHTML += `<p>${item.nome} (x${item.quantidade}) - R$ ${valorTotal}</p>`;
+});
+
+
+  resumo.innerHTML = resumoHTML || "<p>Nenhum item encontrado.</p>";
+  formaTexto.textContent = forma || "Não selecionada";
+
+  card.style.display = "block";
+
+
+  if (forma === "Pix") {
+    const chavePix = "chavepix123456789"; 
+    pixArea.innerHTML = `
+      <p><strong>Escaneie o QR Code para pagar:</strong></p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(chavePix)}&size=150x150" alt="QR Code Pix">
+    `;
+  } else {
+    pixArea.innerHTML = "";
+  }
+});

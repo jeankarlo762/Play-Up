@@ -82,3 +82,27 @@
     }
   }
 
+.card {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.card h3 {
+  color: #28a745;
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+#pix-area img {
+  margin-top: 10px;
+}
