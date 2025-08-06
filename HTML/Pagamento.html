@@ -22,10 +22,24 @@
       <option value="Pix">PIX</option>
       <option value="Boleto">Boleto</option>
     </select>
+   
+   <label for="frete">Região de Entrega:</label>
+<select id="frete" name="frete" required>
+  <option value="">Selecione...</option>
+  <option value="sul">Sul</option>
+  <option value="sudeste">Sudeste</option>
+  <option value="norte">Norte</option>
+  <option value="nordeste">Nordeste</option>
+  <option value="centro-oeste">Centro-Oeste</option>
+</select>
 
+<p id="frete-valor" class="frete-info">
+
+<p id="frete-valor" class="frete-info"></p>
     <button id="confirmar-pagamento">Confirmar Pagamento</button>
   </div>
   <script src = "../JS/adicionar.js"></script>
+  <script src = "../JS/Frete.js"></script>
 
   <div id="card-confirmacao" style="display: none;">
   <div class="card">
