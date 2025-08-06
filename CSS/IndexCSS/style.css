@@ -143,3 +143,28 @@
 }
 
 
+.site-footer {
+  background-color: #f8f9fa; 
+  color: #333;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 4px solid #007bff; 
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #007bff;
+}
+
+.footer-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+

@@ -17,14 +17,39 @@
     <label for="formaPag">Forma de Pagamento:</label>
     <select id="formaPag" name="formaPag" required>
       <option value="">Selecione...</option>
-      <option value="CB">Cartão de Débito</option>
-      <option value="CC">Cartão de Crédito</option>
+      <option value="Cartão de Débito">Cartão de Débito</option>
+      <option value="Cartão de Crédito">Cartão de Crédito</option>
       <option value="Pix">PIX</option>
       <option value="Boleto">Boleto</option>
     </select>
+   
+   <label for="frete">Região de Entrega:</label>
+<select id="frete" name="frete" required>
+  <option value="">Selecione...</option>
+  <option value="sul">Sul</option>
+  <option value="sudeste">Sudeste</option>
+  <option value="norte">Norte</option>
+  <option value="nordeste">Nordeste</option>
+  <option value="centro-oeste">Centro-Oeste</option>
+</select>
 
+<p id="frete-valor" class="frete-info">
+
+<p id="frete-valor" class="frete-info"></p>
     <button id="confirmar-pagamento">Confirmar Pagamento</button>
   </div>
   <script src = "../JS/adicionar.js"></script>
+  <script src = "../JS/Frete.js"></script>
+
+  <div id="card-confirmacao" style="display: none;">
+  <div class="card">
+    <h3>✅ Pagamento Confirmado</h3>
+    <div id="resumo-itens"></div>
+    <p><strong>Forma de Pagamento:</strong> <span id="forma-escolhida"></span></p>
+    <div id="pix-area"></div>
+  </div>
+</div>
+
+  
 </body>
 </html>
